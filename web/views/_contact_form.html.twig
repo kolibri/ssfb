@@ -1,0 +1,61 @@
+<form action="{{ path('form_submit', {'name': active}) }}" method="POST" class="form-horizontal">
+    <legend>Kontaktformular</legend>
+
+    <div class="control-group">
+        <label class="control-label" for="nachname">*Nachname:</label>
+        <div class="controls">
+            <input name="nachname" value="" type="text">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="vorname">*Vorname:</label>
+        <div class="controls">
+            <input name="vorname" value="" type="text">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="firma">Firma:</label>
+        <div class="controls">
+            <input name="firma" value="" type="text">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="addresse">Postanschrift:</label>
+        <div class="controls">
+            <input name="strasse" value="" type="text">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="telefon">Telefon:</label> 
+        <div class="controls">
+            <input name="telefon" value="" type="text">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="email">*E-Mail:</label>
+        <div class="controls">
+            <input name="email" value="" type="text">
+        </div>
+    </div>
+
+    <div class="control-group textarea">
+        <label class="control-label" for="text"><strong>Kommentar:</strong></label>
+        <div class="controls">
+            <textarea rows="4" name="text">
+            </textarea>
+        </div>
+    </div>
+    <div class="control-group">
+            <button type="submit" class="btn btn-primary">Formular absenden</button>
+            <button type="reset" class="btn">Formular löschen</button>
+    </div>
+</form>
+<p>
+    *Pflichtfelder
+</p>
+

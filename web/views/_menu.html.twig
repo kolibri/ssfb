@@ -1,0 +1,26 @@
+{%
+  set menu = {
+    'welcome' : 'Home',
+  }
+%}
+
+<div class="navbar">
+    <div class="navbar-inner">
+        <ul class="nav">
+
+{% for slug, name in menu %}
+    {% set a_class = '' %}
+    {% if slug == active %}
+        {% set a_class = 'active' %}
+    {% endif %}
+
+<li class="{{ a_class }}">
+    <a class="{{ a_class }}" href="{{ path('page', {'name': slug}) }}">
+        {{ name }}
+    </a>
+</li>
+{% endfor %}
+
+        </ul>
+    </div>
+</div>

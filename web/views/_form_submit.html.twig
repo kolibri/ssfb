@@ -1,0 +1,18 @@
+{% extends '_base.html.twig' %}
+
+{% block content %}
+
+    {% if(message_sent) %}
+    {# Nachricht gesendet! #}
+        <h2>Thank you</h2>
+        <p>Your message was sent.</p>
+    {% else %}
+    {# Nachricht konnte nicht gesendet werden #}
+        <h2>Sorry</h2>
+        <p>An error ocured. Your message could not be sent.</p>
+        <p>
+            Instead, you can write us an email to 
+            <a href="{{ email }}">{{ email }}</a>.
+        </p>
+    {% endif %}
+{% endblock %}
