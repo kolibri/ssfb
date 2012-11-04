@@ -2,7 +2,7 @@
 <div>
     {% for picture in pictures %}
         
-        <a title="Bild {{ picture }}" href="/images/photoalbum/{{ album }}/{{ picture }}.jpg" rel="photoalbum" class="lightbox">
+        <a title="picture {{ picture }}" href="/images/photoalbum/{{ album }}/{{ picture }}.jpg" rel="photoalbum" class="lightbox">
             <img width="72" height="72" alt="Bild {{ picture }}" src="/images/photoalbum/{{album}}/{{ picture }}.jpg">
         </a>
     {% endfor %}

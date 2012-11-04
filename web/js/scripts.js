@@ -1,5 +1,5 @@
 $(document).ready(function(){
 
-// init lightbox
-$('.lightbox').lightbox();
+    // init lightbox
+    $('a.lightbox').lightbox();
 });

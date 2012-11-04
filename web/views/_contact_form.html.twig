@@ -1,61 +1,36 @@
 <form action="{{ path('form_submit', {'name': active}) }}" method="POST" class="form-horizontal">
-    <legend>Kontaktformular</legend>
+    <legend>Contact form</legend>
 
     <div class="control-group">
-        <label class="control-label" for="nachname">*Nachname:</label>
+        <label class="control-label" for="nachname">name:</label>
         <div class="controls">
-            <input name="nachname" value="" type="text">
+            <input name="name" value="" type="text">
         </div>
     </div>
 
     <div class="control-group">
-        <label class="control-label" for="vorname">*Vorname:</label>
+        <label class="control-label" for="vorname">first name:</label>
         <div class="controls">
-            <input name="vorname" value="" type="text">
+            <input name="first_name" value="" type="text">
         </div>
     </div>
 
     <div class="control-group">
-        <label class="control-label" for="firma">Firma:</label>
-        <div class="controls">
-            <input name="firma" value="" type="text">
-        </div>
-    </div>
-
-    <div class="control-group">
-        <label class="control-label" for="addresse">Postanschrift:</label>
-        <div class="controls">
-            <input name="strasse" value="" type="text">
-        </div>
-    </div>
-
-    <div class="control-group">
-        <label class="control-label" for="telefon">Telefon:</label> 
-        <div class="controls">
-            <input name="telefon" value="" type="text">
-        </div>
-    </div>
-
-    <div class="control-group">
-        <label class="control-label" for="email">*E-Mail:</label>
+        <label class="control-label" for="email">email:</label>
         <div class="controls">
             <input name="email" value="" type="text">
         </div>
     </div>
 
     <div class="control-group textarea">
-        <label class="control-label" for="text"><strong>Kommentar:</strong></label>
+        <label class="control-label" for="text"><strong>Your message:</strong></label>
         <div class="controls">
             <textarea rows="4" name="text">
             </textarea>
         </div>
     </div>
     <div class="control-group">
-            <button type="submit" class="btn btn-primary">Formular absenden</button>
-            <button type="reset" class="btn">Formular löschen</button>
+            <button type="submit" class="btn btn-primary">submit</button>
+            <button type="reset" class="btn">reset</button>
     </div>
 </form>
-<p>
-    *Pflichtfelder
-</p>
-
