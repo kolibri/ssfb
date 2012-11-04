@@ -1,6 +1,12 @@
 #Documentation
 
+## Installation
+Place code on your server, make web/ to youre webroot, and run
+    composer update
+This should install silex and other vendors to vendor/
+
 ## Usage
+
 ### Create pages
 Every file under web/views is accesable by its filename without extension.
 So the file 'web/views/welcome.html.twig' will be accesable via 
@@ -39,3 +45,8 @@ Twig as template engine (http://twig.sensiolabs.org)
 Swiftmailer for sending emails (http://swiftmailer.org)
 jQuery lightbox as picture viewer (http://leandrovieira.com/projects/jquery/lightbox)
 Twitter Bootstrap as CSS framework (http://twitter.github.com/bootstrap)
+
+## Next steps
+Full installation via composer
+Contact form validation
+Refactor for better code style
